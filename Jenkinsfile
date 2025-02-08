@@ -23,7 +23,7 @@ pipeline {
                     
                     // 3) Build the Docker image, tagging with BUILD_VERSION 2.0
                     sh """
-                      docker build -t shams43/jenkins-demo:${params.BUILD_VERSION} .
+                      docker build -t shams43/jenkins:${params.BUILD_VERSION} .
                     """
                 }
             }
