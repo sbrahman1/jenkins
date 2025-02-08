@@ -32,10 +32,10 @@ pipeline {
         stage('Docker Push') {
             steps {
                 script {
-                    // 4) Securely use Docker Hub credentials (ID: dockerhub-credentials)
+                    // 4) Securely use Docker Hub credentials
                     withCredentials([
                         usernamePassword(
-                            credentialsId: 'dockerhub-credentials', 
+                            credentialsId: 'shams43', 
                             usernameVariable: 'DOCKER_USER', 
                             passwordVariable: 'DOCKER_PASS'
                         )
