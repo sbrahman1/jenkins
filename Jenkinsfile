@@ -44,7 +44,7 @@ pipeline {
                         sh "echo \$DOCKER_PASS | docker login -u \$DOCKER_USER --password-stdin"
 
                         // Push the Docker image with the BUILD_VERSION tag
-                        sh "docker push shams43/jenkins-demo:${params.BUILD_VERSION}"
+                        sh "docker push shams43/jenkins:${params.BUILD_VERSION}"
                     }
                 }
             }
